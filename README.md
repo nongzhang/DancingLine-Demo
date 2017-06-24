@@ -9,5 +9,5 @@ To be continue......
 
 ![Image text](https://raw.github.com/nongzhang/DancingLine-Demo/master/Picture/20173101831128859768077527140_600_566.png)
 
-![Image text](https://raw.github.com/nongzhang/DancingLine-Demo/master/Picture/DancingLine Demo.png)
+![Image text](https://raw.github.com/nongzhang/DancingLine-Demo/master/Picture/DancingLineDemo.png)
 
