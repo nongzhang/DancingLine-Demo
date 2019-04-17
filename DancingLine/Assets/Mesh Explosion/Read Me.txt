@@ -1,0 +1,49 @@
+Mesh Explosion
+
+ by NDP Tools
+ tools@neverdontplay.com
+
+
+- Version History
+
+1.3 2012-12-05
+ Improved the physics test scene by replacing the cubes with icospheres.
+
+1.2 2012-12-04
+ Added an option to create 'Physics' explosions where the explosion fragments interact with the environment. This mode creates a new GameObject with a Rigidbody for each triangle in the original object so is only suitable for use with very low-polygon meshes.
+ Added a custom inspector to show only the options that are relevant for the current explosion type, and to add tooltip descriptions for all options.
+ Fixed 'Use Gravity' option behaving badly when used on GameObjects that are rotated.
+
+1.1 2012-11-26
+ Added 'Use Gravity' option
+
+1.0 2012-11-23
+ First version
+
+
+- Introduction
+
+Mesh Explosion is a script package that takes any mesh and animates it exploding into its component triangles.
+
+
+- Usage
+
+Using Mesh Explosion is extremely simple. Find one of your GameObjects with a MeshFilter and MeshRenderer (or, if you're using Unity 4.0 or above, a SkinnedMeshRenderer).
+
+Add the MeshExploder script to the GameObject (it's in the Component / Mesh menu). Leave the parameters at their defaults for now.
+
+Now when you want to make the GameObject explode you simply need to call the Explode() method of the MeshExploder component, or send the GameObject an "Explode" message. The explosion is created as a separate GameObject so you'll also want to destroy the original, or at least disable its renderer component if you still need the GameObject for other reasons.
+
+For testing purposes the package includes a script called ClickOrTapToExplode (in the Demo folder) which sends the "Explode" message and destroys the GameObject when it is clicked (or tapped on touchscreen platforms). It requires a collider to detect when the object is touched, so attach an appropriate collider for your mesh and configure its proportions, and then add the ClickOrTapToExplode component.
+
+Play the game, click or tap the object, and watch it E X P L O D E.
+
+
+- Parameters
+
+Hover your mouse over the parameter names in the inspector for a tooltip that describes what they do.
+
+
+- Support
+
+If you have any problems, questions, bug reports, or feature requests please email <tools@neverdontplay.com>. I aim to answer all support emails in one working day or less.
